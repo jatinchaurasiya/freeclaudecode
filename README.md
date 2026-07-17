@@ -1,5 +1,5 @@
 # freeclaudecode
-Run Claude Code completely free by routing it through NVIDIA's free developer API using Kimi K2 — includes a step-by-step Ubuntu setup guide for students and developers who can't afford paid AI subscriptions.
+Run Claude Code completely free by routing it through NVIDIA's free developer API using Kimi K2.7 Coder — includes a step-by-step Ubuntu setup guide for students and developers who can't afford paid AI subscriptions.
 What is this?
 This is a complete, beginner-friendly guide for setting up Claude Code — Anthropic's powerful AI coding tool — to work entirely for free on Ubuntu Linux, by routing all requests through NVIDIA's free developer API using the Kimi K2 Instruct model from Moonshot AI.
 Normally, Claude Code requires a paid Anthropic API subscription which most students and independent developers can't afford. This guide solves that problem by placing a lightweight translation server called LiteLLM on your local machine. Claude Code sends its requests to LiteLLM thinking it's talking to Anthropic — LiteLLM silently translates those requests into a format that NVIDIA's API understands, forwards them to Kimi K2 on NVIDIA's servers for free, and sends the response back. Neither side knows about the other. The whole chain is invisible.
